@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paqueteuno;
+package paquetedos;
+
+import paqueteuno.FacturaTelefono;
 
 /**
  *
@@ -12,16 +14,21 @@ package paqueteuno;
 public class Ejecutor {
     public static void main(String[] args) {
         // Crear un objeto de tipo FacturaTelefono
-        FacturaTelefono ft = new FacturaTelefono();
+        terreno ft = new terreno();
         // Valores de entrada
-        String numeroTelefono = "098321321";
-        double minutos = 230;
-        double valorMinuto = 0.25;
+         double valorMetroCuadrado;
+         double costo_terreno;
+         double ancho;
+         double largo;
+         double area;
+    
         // uso de los métodos establecer para darle valores a los 
         // atributos del objeto.
-        ft.establecerNumeroTelefono(numeroTelefono);
-        ft.establecerMinutosMes(minutos);
-        ft.establecerValorMinuto(valorMinuto);
+        ft.establecerValorMetroCuadrado(valorMetroCuadrado);
+        ft.establecerCosto_terreno(costo_terreno);
+        ft.establecerAncho(ancho);
+        ft.establecerLargo(largo);
+        ft.establecerArea(area);
         // hasta aquí el objeto ya tiene valores para sus atributos:
         // número de telefono, número de minutos consumidos en el mes, 
         // valor de cada minuto.
@@ -30,8 +37,9 @@ public class Ejecutor {
         // consumidos en el mes, valor de cada minuto; que ya los tiene el 
         // objeto.
         
+        ft.calcularAreaTerreno();
         ft.calcularValorFactura();
-        
+        ft.costo_terreno();
         // Se hace uso de los métodos obtener para presentar en pantalla lo 
         // requerido
         System.out.printf("Factura de Teléfono\n\nNúmero de teléfono: %s\n"
