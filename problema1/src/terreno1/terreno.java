@@ -9,7 +9,7 @@ package paqueteuno;
  *
  * @author reroes
  */
-public class FacturaTelefono {
+public class terreno {
     private double valorMetroCuadrado;
     private double costo_terreno;
     private double ancho;

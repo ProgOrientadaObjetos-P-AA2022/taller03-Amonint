@@ -14,33 +14,30 @@ import paqueteuno.FacturaTelefono;
 public class Ejecutor {
     public static void main(String[] args) {
         // Crear un objeto de tipo FacturaTelefono
-        terreno ft = new terreno();
+        EquivalenteHora ft = new EquivalenteHora();
         // Valores de entrada
-         double valorMetroCuadrado;
-         double costo_terreno;
-         double ancho;
-         double largo;
-         double area;
-    
-        // uso de los métodos establecer para darle valores a los 
+        int horas;
+        int minutos;
+        int segundos;
+        int dias;
+        int valorMinuto;
+        int valorSegundos;
+        // uso de los métodos establecer para darle valores a los
         // atributos del objeto.
-        ft.establecerValorMetroCuadrado(valorMetroCuadrado);
-        ft.establecerCosto_terreno(costo_terreno);
-        ft.establecerAncho(ancho);
-        ft.establecerLargo(largo);
-        ft.establecerArea(area);
+        ft.establecerHoras(valorHoras);
+        ft.establecerMinutos(valorMinuto);
+        ft.establecerSegundos(valorSegundos);
         // hasta aquí el objeto ya tiene valores para sus atributos:
-        // número de telefono, número de minutos consumidos en el mes, 
+        // número de telefono, número de minutos consumidos en el mes,
         // valor de cada minuto.
         // LLamo al método calcularValorFactura, no se envía parámetros,
-        // pues trabaja con los valores de los atributos: número de minutos 
-        // consumidos en el mes, valor de cada minuto; que ya los tiene el 
+        // pues trabaja con los valores de los atributos: número de minutos
+        // consumidos en el mes, valor de cada minuto; que ya los tiene el
         // objeto.
-        
-        ft.calcularAreaTerreno();
+
         ft.calcularValorFactura();
-        ft.costo_terreno();
-        // Se hace uso de los métodos obtener para presentar en pantalla lo 
+
+        // Se hace uso de los métodos obtener para presentar en pantalla lo
         // requerido
         System.out.printf("Factura de Teléfono\n\nNúmero de teléfono: %s\n"
                 + "Minutos mensuales: %.2f\nValor por minuto: %.2f\n"
