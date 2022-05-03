@@ -5,12 +5,12 @@ public class EquipoCelulares {
     
     private String sistemaOperativo;
     private int pantallaTamanio;
-    private double costo_inicial;
+    private double costoinicial;
     private double iva;
     private double costoIva;
-    private String direccion_mac;
-    private String info_imei;
-    private double costo_final;
+    private String direccionmac;
+    private String infoimei;
+    private double costofinal;
     
     public void establecerSistemaOperativo(String x){
         sistemaOperativo = x;

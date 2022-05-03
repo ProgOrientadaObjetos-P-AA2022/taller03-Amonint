@@ -9,22 +9,22 @@ public class Ejecutor {
         
         double iva = 0.12;
         
-        equiCelular1.establecerSistemaOperativo("IOS 9");
-        equiCelular1.establecerPantallaTamanio(15);
-        equiCelular1.establecerCostoInicial(545.00);
+        equiCelular1.establecerSistemaOperativo("Android");
+        equiCelular1.establecerPantallaTaman(15);
+        equiCelular1.establecerCostoInicial(20.00);
         equiCelular1.establecerIva(iva);
         equiCelular1.calcularCostoIva();
-        equiCelular1.establecerDireccionMac("123.324.2134.98");
-        equiCelular1.establecerInfoImei("2343129.453243.324.65");
+        equiCelular1.establecerDireccionMac("453.324.2134.54");
+        equiCelular1.establecerInfoImei("123617826312678361283");
         equiCelular1.calcularCostoFinal();
         
-        equiCelular2.establecerSistemaOperativo("Androi");
-        equiCelular2.establecerPantallaTamanio(18);
-        equiCelular2.establecerCostoInicial(210.50);
+        equiCelular2.establecerSistemaOperativo("WindowsPhone");
+        equiCelular2.establecerPantallaTamanio(8);
+        equiCelular2.establecerCostoInicial(13.50);
         equiCelular2.establecerIva(iva);
         equiCelular2.calcularCostoIva();
-        equiCelular2.establecerDireccionMac("176.234.7521.92");
-        equiCelular2.establecerInfoImei("3760394.234984.132.73");
+        equiCelular2.establecerDireccionMac("15515152121151");
+        equiCelular2.establecerInfoImei("020202020202020202");
         equiCelular2.calcularCostoFinal();
         
         System.out.printf("Caracteristicas celular 1\n \nSistema operativo: "
